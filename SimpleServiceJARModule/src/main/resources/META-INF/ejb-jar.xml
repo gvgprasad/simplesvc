@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN" "http://java.sun.com/dtd/ejb-jar_2_0.dtd">
+<ejb-jar id="ejb-jar_ID">
+	<display-name>VipprSequence</display-name>
+	<enterprise-beans>
+		<session id="SequenceController">
+			<ejb-name>SequenceController</ejb-name>
+			<home>com.honda.am.vippr.sequencegenerator.SequenceControllerSFHome</home>
+			<remote>com.honda.am.vippr.sequencegenerator.SequenceControllerSF</remote>
+			<local-home>com.honda.am.vippr.sequencegenerator.SequenceControllerSFLocalHome</local-home>
+			<local>com.honda.am.vippr.sequencegenerator.SequenceControllerSFLocal</local>
+			<ejb-class>com.honda.am.vippr.sequencegenerator.SequenceControllerSFBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<env-entry>
+				<description/>
+				<env-entry-name>retryCount</env-entry-name>
+				<env-entry-type>java.lang.Integer</env-entry-type>
+				<env-entry-value>5</env-entry-value>
+      		</env-entry>
+      		<env-entry>
+				<description/>
+				<env-entry-name>blockSize</env-entry-name>
+				<env-entry-type>java.lang.Integer</env-entry-type>
+				<env-entry-value>1</env-entry-value>
+      		</env-entry>
+      		<ejb-local-ref id="EJBLocalRef_1114409002850">
+      			<ejb-ref-name>ejb/VPSEQ1</ejb-ref-name>
+      			<ejb-ref-type>Entity</ejb-ref-type>
+      			<local-home>com.honda.am.vippr.sequencegenerator.VPSEQ1LocalHome</local-home>
+      			<local>com.honda.am.vippr.sequencegenerator.VPSEQ1Local</local>
+      			<ejb-link>VPSEQ1</ejb-link>
+      		</ejb-local-ref>
+		</session>
+		<entity id="VPSEQ1">
+			<ejb-name>VPSEQ1</ejb-name>
+			<local-home>com.honda.am.vippr.sequencegenerator.VPSEQ1LocalHome</local-home>
+			<local>com.honda.am.vippr.sequencegenerator.VPSEQ1Local</local>
+			<ejb-class>com.honda.am.vippr.sequencegenerator.VPSEQ1Bean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>java.lang.Integer</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-version>2.x</cmp-version>
+			<abstract-schema-name>VPSEQ1</abstract-schema-name>
+			<cmp-field id="CMPAttribute_1114405647318">
+				<field-name>sequence_id</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1114405647319">
+				<field-name>sequence_name</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1114405647320">
+				<field-name>current_value</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1122269026543">
+				<field-name>long_current_value</field-name>
+			</cmp-field>
+			<primkey-field>sequence_id</primkey-field>
+		</entity>
+	</enterprise-beans>
+	<assembly-descriptor>
+		<container-transaction>
+			<method>
+				<ejb-name>SequenceController</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>getNextLongSequenceNumber</method-name>
+				<method-params>
+					<method-param>int</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>SequenceController</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>getNextSequenceNumber</method-name>
+				<method-params>
+					<method-param>int</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>SequenceController</ejb-name>
+				<method-intf>Local</method-intf>
+				<method-name>getNextLongSequenceNumber</method-name>
+				<method-params>
+					<method-param>int</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>SequenceController</ejb-name>
+				<method-intf>Local</method-intf>
+				<method-name>getNextSequenceNumber</method-name>
+				<method-params>
+					<method-param>int</method-param>
+				</method-params>
+			</method>
+			<trans-attribute>RequiresNew</trans-attribute>
+		</container-transaction>
+	</assembly-descriptor>
+</ejb-jar>

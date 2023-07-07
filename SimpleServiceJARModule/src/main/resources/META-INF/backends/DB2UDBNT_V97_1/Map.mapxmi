@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbrdbmapping:EjbRdbDocumentRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:LUW="http:///com/ibm/db/models/db2/luw.ecore" xmlns:ejb="ejb.xmi" xmlns:ejbrdbmapping="ejbrdbmapping.xmi" xmlns:Mapping="Mapping.xmi" xmi:id="EjbRdbDocumentRoot_1654319006575" topToBottom="true">
+  <helper xmi:type="ejbrdbmapping:RdbSchemaProperies" xmi:id="RdbSchemaProperies_1654319006575" primitivesDocument="DB2UDBNT_V97"/>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1654319006575">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1654319006575">
+      <table xmi:type="LUW:LUWTable" href="META-INF/backends/DB2UDBNT_V97_1/CPCSDBD.dbm#_qtEWAePDEey0LZmMFDV1bg"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1654319006575">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1114405647318"/>
+      <outputs xmi:type="LUW:LUWColumn" href="META-INF/backends/DB2UDBNT_V97_1/CPCSDBD.dbm#_qtEWAuPDEey0LZmMFDV1bg"/>
+      <typeMapping href="JavatoDB2UDBNT_V97TypeMaps.V7.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1654319006576">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1114405647319"/>
+      <outputs xmi:type="LUW:LUWColumn" href="META-INF/backends/DB2UDBNT_V97_1/CPCSDBD.dbm#_qtEWBuPDEey0LZmMFDV1bg"/>
+      <typeMapping href="JavatoDB2UDBNT_V97TypeMaps.V7.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1654319006577">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1114405647320"/>
+      <outputs xmi:type="LUW:LUWColumn" href="META-INF/backends/DB2UDBNT_V97_1/CPCSDBD.dbm#_qtEWDOPDEey0LZmMFDV1bg"/>
+      <typeMapping href="JavatoDB2UDBNT_V97TypeMaps.V7.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1654319006578">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1122269026543"/>
+      <outputs xmi:type="LUW:LUWColumn" href="META-INF/backends/DB2UDBNT_V97_1/CPCSDBD.dbm#_qtEWEOPDEey0LZmMFDV1bg"/>
+      <typeMapping href="JavatoDB2UDBNT_V97TypeMaps.V7.xmi#BigDecimal-DECIMAL"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#VPSEQ1"/>
+    <outputs xmi:type="LUW:LUWTable" href="META-INF/backends/DB2UDBNT_V97_1/CPCSDBD.dbm#_qtEWAePDEey0LZmMFDV1bg"/>
+  </nested>
+  <inputs xmi:type="ejb:EJBJar" href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <outputs xmi:type="LUW:LUWDatabase" href="META-INF/backends/DB2UDBNT_V97_1/CPCSDBD.dbm#_qsUvIOPDEey0LZmMFDV1bg"/>
+  <typeMapping xmi:type="Mapping:MappingRoot" href="JavatoDB2UDBNT_V97TypeMaps.V7.xmi#Java_to_DB2UDBNT_V97_TypeMaps"/>
+</ejbrdbmapping:EjbRdbDocumentRoot>

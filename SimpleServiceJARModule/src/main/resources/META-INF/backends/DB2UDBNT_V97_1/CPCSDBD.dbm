@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/data/1.1.0.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DB2Model="http:///com/ibm/db/models/db2/db2.ecore" xmlns:LUW="http:///com/ibm/db/models/db2/luw.ecore" xmlns:SQLConstraints="http:///org/eclipse/datatools/modelbase/sql/constraints.ecore" xmlns:SQLDataTypes="http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore">
+  <LUW:LUWDatabase xmi:id="_qsUvIOPDEey0LZmMFDV1bg" name="CPCSDBD" vendor="DB2 UDB" version="V9.7" schemas="_qtEWAOPDEey0LZmMFDV1bg"/>
+  <DB2Model:DB2Schema xmi:id="_qtEWAOPDEey0LZmMFDV1bg" name="VPX" tables="_qtEWAePDEey0LZmMFDV1bg" database="_qsUvIOPDEey0LZmMFDV1bg"/>
+  <LUW:LUWTable xmi:id="_qtEWAePDEey0LZmMFDV1bg" name="VPSEQ1" schema="_qtEWAOPDEey0LZmMFDV1bg">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_qtEWAuPDEey0LZmMFDV1bg" name="SEQUENCE_ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_qtEWA-PDEey0LZmMFDV1bg" name="INTEGER" primitiveType="INTEGER">
+        <eAnnotations xmi:id="_qtEWBOPDEey0LZmMFDV1bg" source="JDBC_ENUM">
+          <details xmi:id="_qtEWBePDEey0LZmMFDV1bg" key="JDBC_ENUM_KEY" value="4"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_qtEWBuPDEey0LZmMFDV1bg" name="SEQUENCE_NAME">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_qtEWB-PDEey0LZmMFDV1bg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="250">
+        <eAnnotations xmi:id="_qtEWCOPDEey0LZmMFDV1bg" source="JDBC_ENUM">
+          <details xmi:id="_qtEWCePDEey0LZmMFDV1bg" key="JDBC_ENUM_KEY" value="12"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_qtEWCuPDEey0LZmMFDV1bg" source="TYPEMAP_TYPEDEFID">
+          <details xmi:id="_qtEWC-PDEey0LZmMFDV1bg" key="TYPEMAP_TYPEDEFID_KEY" value="CHARACTER_VARYING_250"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_qtEWDOPDEey0LZmMFDV1bg" name="CURRENT_VALUE">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_qtEWDePDEey0LZmMFDV1bg" name="INTEGER" primitiveType="INTEGER">
+        <eAnnotations xmi:id="_qtEWDuPDEey0LZmMFDV1bg" source="JDBC_ENUM">
+          <details xmi:id="_qtEWD-PDEey0LZmMFDV1bg" key="JDBC_ENUM_KEY" value="4"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_qtEWEOPDEey0LZmMFDV1bg" name="LONG_CURRENT_VALUE">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_qtEWEePDEey0LZmMFDV1bg" name="DECIMAL" primitiveType="DECIMAL" precision="10" scale="2">
+        <eAnnotations xmi:id="_qtEWEuPDEey0LZmMFDV1bg" source="JDBC_ENUM">
+          <details xmi:id="_qtEWE-PDEey0LZmMFDV1bg" key="JDBC_ENUM_KEY" value="3"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_qtEWFOPDEey0LZmMFDV1bg" source="TYPEMAP_TYPEDEFID">
+          <details xmi:id="_qtEWFePDEey0LZmMFDV1bg" key="TYPEMAP_TYPEDEFID_KEY" value="DECIMAL_10_2"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_qtEWFuPDEey0LZmMFDV1bg" name="PK_VPSEQ1" members="_qtEWAuPDEey0LZmMFDV1bg"/>
+  </LUW:LUWTable>
+</xmi:XMI>
